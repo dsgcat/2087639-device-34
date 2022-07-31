@@ -34,7 +34,9 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+*{
+  outline: 1px solid indigo;
+}
 .page {
   width: 1440px;
   background: #FFFFFF;
@@ -51,6 +53,8 @@
 .page__header {
   margin: 0 auto;
   width: 1160px;
+  box-sizing: border-box;
+  display: flex;
 }
 
 .header {
@@ -58,8 +62,8 @@
   flex-direction: column;
   box-sizing: border-box;
   width: 1440px;
-  min-height: 750px;
   padding-top: 40px;
+
 
 }
 
@@ -363,9 +367,9 @@
   line-height: 30px;
   color: #FFFFFF;
   width: 250px;
-  height: 135px;
+
   position: absolute;
-  bottom: -200px;
+  bottom: -90px;
   right: -50px;
   margin: 0;
   padding: 0;
@@ -374,7 +378,6 @@
 .header__sliders {
   display: grid;
   grid-template-columns: repeat(2, 560px);
-  grid-template-rows: 560px 401px;
   box-sizing: border-box;
   column-gap: 40px;
 }
@@ -466,7 +469,7 @@
   box-sizing: border-box;
 }
 
-.characteristics{
+.characteristics {
   width: 307px;
   display: grid;
   grid-template-columns: 140px 147px;
@@ -474,7 +477,7 @@
   padding-top: 44px;
 }
 
-.characteristics__device{
+.characteristics__device {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -498,4 +501,54 @@
   font-size: 16px;
   line-height: 30px;
   color: #444444;
+}
+.category{
+  width: 1440px;
+  box-sizing: border-box;
+  padding-top: 108px;
+}
+.category__list{
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  column-gap: 40px;
+}
+.category__wrapper{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 253px;
+
+}
+.category__link {
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  letter-spacing: -0.02em;
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  min-height: 253px;
+}
+.category__img{
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category__img_monopod{
+  align-items: flex-end;
+}
+.category__text{
+  margin: 0;
+  padding: 33px 0 0 0;
 }
