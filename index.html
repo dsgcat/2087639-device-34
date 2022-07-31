@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
+    <title>DEVICE</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <meta name="viweport" content="width=divice-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+  <body class="page">
+    <section class="page__header">
+      <header class="header">
+        <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
+        <div class="header__wrapper">
+          <a href="index.html" class="header__logotype">
+            <svg xmlns="http://www.w3.org/2000/svg" width="145" height="37" viewBox="0 0 145 37" fill="none">
+              <path
+                d="M27.2188 0.388916V35.6889H19.6135V33.2889C17.9124 35.1889 15.5107 36.3889 12.1084 36.3889C5.5038 36.3889 0 30.5889 0 23.0889C0 15.5889 5.5038 9.78892 12.1084 9.78892C15.5107 9.78892 18.0124 10.9889 19.6135 12.8889V0.388916H27.2188ZM19.6135 23.0889C19.6135 19.2889 17.1118 16.8889 13.6094 16.8889C10.107 16.8889 7.60524 19.2889 7.60524 23.0889C7.60524 26.8889 10.107 29.2889 13.6094 29.2889C17.1118 29.1889 19.6135 26.8889 19.6135 23.0889Z"
+                fill="black" />
+              <path
+                d="M43.7298 29.5888C45.8313 29.5888 47.5325 28.7888 48.5332 27.6888L54.6374 31.1888C52.1356 34.5888 48.4331 36.3888 43.6298 36.3888C35.0238 36.3888 29.6201 30.5888 29.6201 23.0888C29.6201 15.5888 35.0238 9.78882 43.0294 9.78882C50.4345 9.78882 55.8382 15.4888 55.8382 23.0888C55.8382 24.1888 55.7381 25.1888 55.538 26.0888H37.6256C38.6263 28.6888 40.9279 29.5888 43.7298 29.5888ZM48.333 20.4888C47.5325 17.5888 45.2309 16.4888 42.9293 16.4888C40.0273 16.4888 38.126 17.8888 37.4255 20.4888H48.333Z"
+                fill="black" />
+              <path
+                d="M82.1563 10.489L72.8499 35.689H64.2439L54.9375 10.489H63.3433L68.647 26.489L73.9506 10.489C73.9506 10.489 82.1563 10.489 82.1563 10.489Z"
+                fill="black" />
+              <path d="M83.458 10.489H91.0633V35.689H83.458V10.489Z" fill="black" />
+              <path
+                d="M93.665 23.0888C93.665 15.5888 99.369 9.78882 107.074 9.78882C111.978 9.78882 116.281 12.3888 118.482 16.2888L111.878 20.0888C110.977 18.2888 109.176 17.2888 106.974 17.2888C103.672 17.2888 101.27 19.6888 101.27 23.0888C101.27 26.5888 103.672 28.8888 106.974 28.8888C109.176 28.8888 111.077 27.7888 111.878 26.0888L118.482 29.8888C116.381 33.7888 112.078 36.3888 107.074 36.3888C99.369 36.3888 93.665 30.5888 93.665 23.0888Z"
+                fill="black" />
+              <path
+                d="M132.892 29.5888C134.993 29.5888 136.695 28.7888 137.695 27.6888L143.799 31.1888C141.298 34.5888 137.595 36.3888 132.792 36.3888C124.186 36.3888 118.782 30.5888 118.782 23.0888C118.782 15.5888 124.286 9.78882 132.191 9.78882C139.597 9.78882 145 15.4888 145 23.0888C145 24.1888 144.9 25.1888 144.7 26.0888H126.788C127.788 28.6888 130.09 29.5888 132.892 29.5888ZM137.595 20.4888C136.795 17.5888 134.493 16.4888 132.191 16.4888C129.289 16.4888 127.388 17.8888 126.688 20.4888H137.595Z"
+                fill="black" />
+              <path d="M83.458 0.388916V10.4889L91.0633 0.388916H83.458Z" fill="#510094" />
+            </svg>
+          </a>
+          <div class="user">
 
+            <form class="user__form" action="https://echo.htmlacademy.ru/" method="get">
+              <span class="visually-hidden">Форма поиска информации.</span>
+              <div class="form-wrapper">
+                <div class="search-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                    <path
+                      d="M15.7 14.6889L12.6 11.5889C13.5 10.3889 14 8.98892 14 7.38892C14 3.48892 10.9 0.388916 7 0.388916C3.1 0.388916 0 3.48892 0 7.38892C0 11.2889 3.1 14.3889 7 14.3889C8.6 14.3889 10 13.8889 11.2 12.9889L14.3 16.0889C14.5 16.2889 14.7 16.3889 15 16.3889C15.6 16.3889 16 15.9889 16 15.3889C16 15.1889 15.9 14.8889 15.7 14.6889ZM2 7.38892C2 4.58892 4.2 2.38892 7 2.38892C9.8 2.38892 12 4.58892 12 7.38892C12 10.1889 9.8 12.3889 7 12.3889C4.2 12.3889 2 10.1889 2 7.38892Z"
+                      fill="black" />
+                  </svg>
+                  <input type="text" name="search" class="user__search" placeholder="Текст поиска">
+                </div>
+                <div class="button-wrapper">
+                  <button type="button" class="user__btn">Найти</button>
+                </div>
+              </div>
+            </form>
+
+            <a href="#" class="user__login">Войти</a>
+            <ul class="user__action">
+              <li class="user__compare">Сравнить</li>
+              <li class="user__cart"><span class="user__cart-quantity">2</span>Корзина</li>
+            </ul>
+          </div>
+          <nav class="navigation">
+            <div class="navigation__catalog">
+              <p class="navigation__title">Каталог товаров</p>
+              <a href="#" class="navigation__hide-menu"></a>
+            </div>
+            <ul class="navigation__list">
+              <li class="navigation__item">Доставка</li>
+              <li class="navigation__item">Гарантия</li>
+              <li class="navigation__item">Контакты</li>
+            </ul>
+          </nav>
+          <div class="header__number"><span class="header__number-text">01</span></div>
+        </div>
+        <div class="header__sliders">
+          <div class="header__img-slider">
+            <img src="./images/slider-1.png" alt="Квадрокоптер направленного действия" width="560" heigth="560"
+              class="header__slider-image">
+          </div>
+          <div class="header__description">
+            <div class="header__text-slider">
+              <p class="header__title-slider">Порхает как бабочка, жалит как пчела!</p>
+              <p class="header__paragraph-slider">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
+                камеру.</p>
+            </div>
+            <div class="buttons">
+              <a href="#" class="buttons__more">Подробнее</a>
+              <ul class="buttons__slider">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </div>
+            <div class="characteristics">
+              <ul class="characteristics__device">
+                <li class="characteristics__distance">800 м</li>
+                <li class="characteristics__text">Дальность полета</li>
+              </ul>
+              <ul class="characteristics__device">
+                <li class="characteristics__distance">50 м</li>
+                <li class="characteristics__text">Радиус поражения</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
   </body>
+
 </html>
